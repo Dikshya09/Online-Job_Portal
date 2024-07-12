@@ -1,0 +1,56 @@
+	*{
+        box-sizing: border-box;
+    }
+    .logo{
+        color:#338573;
+    }
+    .form-box{
+        background-color: #fff;
+        border: 1px solid #338573;
+        box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        margin: 30px auto;
+        max-width: 600px;
+        border-radius: 5px;
+    }
+    .field-group{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom:10px ;
+        
+    }
+    .field-group input,
+    .field-group textarea, 
+    .field-group select{
+        width: calc(100% - 30px);
+    }
+    input, select{
+        height: 38px;
+        padding: 6px;
+        border: 1px solid#ddd;
+     border-radius: 6px;
+    }
+    button[type=login]{
+        height: 40px;
+        color:  white;
+        border: none;
+        background: #338573;
+        padding: 12px;
+        margin: 10px auto;
+        border-radius: 10px;
+        display: block;
+        text-align: center;
+    }
+    h3{
+        color: #338573;
+        font-size: 25px;
+        margin: auto;
+    }
+    h4{
+        color: #338573;
+    }
+    .form-box span {
+        color: red;
+    }

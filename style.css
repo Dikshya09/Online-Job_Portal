@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: popins;
     scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(247, 247, 247)
 }
 .header{
     width:100%;
@@ -12,32 +14,92 @@
     display: flex;
     position: relative;
     justify-content: space-between;
-    height: 40px;
+    height: 20px;
     padding: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #ffffff; 
+    border-bottom: 1px solid #338573;
+
 }
 .logo{
+    margin-left: 30px;
     color:#338573;
+    cursor: pointer;
 }
-button{
-    font-size: 15px;
-    background-color: #338573;
-    color: white;
-    padding:8px;
-    margin-right: 15px;
-    border-radius: 3px;
-    border: 2px solid #338573;
+.search-bar {
+    flex: 1; 
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    margin-right: 20px;
 }
-button:hover{
-    background-color: #f9faf9;
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid#d1d1d1;
+    border-radius: 25px;
+    margin-right: 5px;
+    width: 300px;
+    outline: none;
+}
+.search-bar button[type="submit"] {
+    background: none;
+    color: #020202;
+    cursor: pointer;
+    padding: 8px;
+}
+.profile{
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1.5px solid #338573;
+}
+.notification-icon{
+    font-size: 18px;
     color: #338573;
+    cursor: pointer;
+    width: 60px;
 }
+.main-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    display: inline;
+}
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #338573;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s; 
+
+  }
+  button:active {
+    transform: scale(1.1); 
+  }
 .banner{
     position: relative;
     width:100%;
     height: 500px;
     display: flex;
-    justify-content: space-between;
-    background-color: #e6fcf9;
+    justify-content: space-around;
+    background-image: linear-gradient(45deg, #c2f0e6, #ffffff); 
+    margin-bottom: 50px;
 }
 .banner .text_1{
     margin-top:100px ;
@@ -52,7 +114,7 @@ h1 span{
 h3{
     font-size: 25px;
     text-align: center;
-    margin: 10px;
+    margin-top: 20px;
 }    
 .banner__1 {
 padding: 18px;
@@ -91,23 +153,52 @@ background-color: #f3f3f3;
 .banner__1__container img:hover{
     transform: translateY(-10px);
 }
+.job_boxs{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 100px;
+}
+  .job_boxs .left_image{
+    width: 400px;
+    height: 375px;
+    box-shadow: rgba(37, 37, 37, 0.2) 0px 2px 8px 0px;
+    border-radius: 1rem;
+    top:200px;
+    position: sticky;
+    margin-top: 18px;
+    z-index: 1;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right,#c7f8ed , #ffffff); 
+}
+.left_image img{
+    margin-left: 30px;   
+}
+.heading3{
+    width: 700px;
+    position: relative;
+    float: right;
+    margin-right: 150px;
+    background-color:rgb(247, 247, 247);
+    margin-top: 50px;
+}
 .job_list{
+    width: 700px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    align-items: center;    
-    gap: 0.94rem;
-    margin-top: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
+    align-items: center;
+    gap: 0.2rem;
+    margin-top: 10px
 }
 .job_details{
+    width: 550px;
+    height: 150px;
     display: flex;
-    justify-content: space-between;
-    background: #f3f3f3;
+    justify-content: space-around;
+    background: #ffffff;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 1rem;
+    border: 1px solid #c3c1c1;
+    margin:10px;
 }
 .company-logo{
     margin: 7px;
@@ -117,6 +208,7 @@ background-color: #f3f3f3;
     width: 60px;
     height: 60px;
 }
+
 .inner{
     margin-top: 20px;
 margin-right: 40px;
@@ -125,17 +217,20 @@ margin-bottom: 15px;
 .inner i{
     color: #338573;
     margin-left: 10px;
-    font-size: 10px;
+    font-size: 14px;
     padding: 5px;
 }
 .inner span{
-    font-size: 10px;
+    font-size: 14px;
 }
 .company-logo img{
-    margin-left:5px;
+    margin-top: 8px;
+    margin-left: 5px;
+    width: 55px;
+    border-radius: 7000px;
 }
 
-.job_list button{
+.job_details button{
     height: 35px;
     margin-top: 28px;
 }
@@ -170,3 +265,160 @@ color: #338573}
     font-weight: 550;
     color: white;
 }
+/* .jobdetails_container{
+    display: flex;
+    justify-content: space-around;
+}
+.jobdetails_child2{
+    width: 500px;
+} */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        /*margin-top: 10px; Adjusted margin for better spacing */
+        order: 2; /* Change order to display search bar below the logo on smaller screens */
+    }
+
+    .search-bar form {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+        max-width: 300px; /* Adjusted max-width for smaller screens */
+    }
+
+    .logo{
+        font-size: 12px;
+    }
+    .main-nav {
+        position: relative;
+        z-index: 10;
+    }
+
+    .toggle-menu {
+        display: inline-block;
+    }
+
+    .main-nav ul {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        width: 200px;
+        display: none;
+    }
+
+    .main-nav li {
+        width: 100%;
+    }
+
+    .main-nav ul.show {
+        display: block;
+    }
+}
+
+/* Menu toggle */
+.toggle-menu {
+    display: none;
+    border: 1px solid transparent;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.toggle-menu span {
+    display: block;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 3px;
+    margin: 4px 0;
+}
+
+.toggle-menu:hover {
+    border-color: var(--primary-color);
+}
+.dropdown-container {
+    margin-right: 20px; /* Adjust as needed */
+  }
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Style the list items */
+  nav ul li {
+    position: relative;
+  }
+
+/* Style the dropdown button */
+.dropbtn {
+    background-color: #338573;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #338573;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 92px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    color: #338573;
+    letter-spacing: 0.8px;
+    }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #338573;
+  }
+  #description {
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+}
+#jobrequirement {
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+}
+
+  

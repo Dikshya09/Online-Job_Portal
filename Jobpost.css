@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.Job_post_container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 700px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    box-shadow: rgba(49, 49, 49, 0.2) 0px 2px 8px 0px;
+    font-size: larger;
+    background-color: #ffffff;
+}
+form{
+    padding: 40px;
+}
+.box_1{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.box_1 input, select{
+width: 290px;
+}
+input, select, textarea{
+    height:40px;
+    border: 1px solid#ddd;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 20px;
+   font-size: medium;
+
+}
+
+textarea{
+    width: 600px;
+    height: 200px;
+}
+input,textarea{
+   padding: 20px;
+}
+h3{
+    color: #338573;
+    margin-bottom:20px;        
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;}
+.button_2{
+ display: flex;
+ justify-content: center;
+    }
+    span{
+        color: red;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+ 
+

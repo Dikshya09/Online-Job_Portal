@@ -1,0 +1,204 @@
+body {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+ text-decoration: none;
+}
+.cols__container{
+  border-radius: 1rem;
+  position: relative;
+  border: 1px solid #c3c1c1;
+  padding: 25px;
+  background-color: #FFF;
+  width: 700px;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+}
+.profile__container{
+  align-items: center;
+    width: 600px;
+    font-size: larger;
+}
+
+ .img__container1 {
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.name{
+  margin-right: 200px;
+}
+.buttons_2 {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons_2 .form-group{
+  margin-left: 250px;
+}
+.buttons_2 .button{
+  display: flex;
+  align-items: center;
+  
+}
+
+.buttons_2 button,
+.form-group .button{
+  padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #338573;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s; 
+}
+.upload{
+  width: 140px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+.upload img{
+  border-radius: 50%;
+  border: 1px solid #151414;
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+.upload .fa{
+  color: white;
+}
+.upload .rightRound{
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  color: #fff;
+  background: #079213;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.upload .leftRound{
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  background: red;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.upload input{
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+}
+.upload input::-webkit-file-upload-button, .upload input[type=submit]{
+  cursor: pointer;
+}
+.form-group button{
+  all: unset;
+}
+.form-group{
+  margin: 30px;
+}
+.form-group img{
+  width:15px;
+
+}
+.form-group input{
+width: 290px;
+  height:40px;
+  border: 1px solid#ddd;
+  border-radius: 6px;
+  outline: none;
+  margin: 10px 0 15px 40px;
+ font-size: medium;
+}
+.form-group span{
+  width: 100%;
+  text-align: center;
+}
+.update{
+  margin-left: 170px;
+  margin-top: 10px;
+}
+.file-input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.file-input-wrapper input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.file-input-wrapper span {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #338573;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-input-wrapper span:hover {
+  background-color: #45a049;
+}
+.update-form {
+  display: none;
+  margin-top: 10px;
+}
+.update-form.active {
+  display: block;
+}
+hr{
+  border: 0;
+    width: 700px;
+    height: 1px;
+    margin: 10px 0 5px;
+    background: #ccc;
+}
+#description {
+  white-space: pre-wrap; /* Preserve whitespace and line breaks */
+}
+.form-group .description{
+ width: 597px;
+ height: auto;
+  padding:  30px;
+  text-align: justify;
+  border: 1px solid#ccc;
+  border-radius: 15px;
+}
+.form-group .descript_button{
+  margin-left: 660px;
+}
+
+.popup-form .textarea{
+  width: 300px;
+  height: auto;
+  border: 1px solid#ccc;
+}
+
